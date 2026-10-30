@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taxi Finance — поверителност</title>
+<meta name="description" content="Политика за поверителност на Taxi Finance.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Политика за поверителност</h1>
+<p class="sub"><a href="index.html">Taxi Finance</a> · в сила от 30.10.2026</p>
+
+<h2>Кратко</h2>
+<div class="card">
+<ul>
+<li>Всички данни се пазят <b>на уредите на потребителя</b>. Авторът няма сървър и не получава никакви данни.</li>
+<li>По желание данните се синхронизират през <b>собствения Google Drive на потребителя</b> — само във файла, който приложението само е създало.</li>
+<li>Няма реклами, проследяване, анализи или предаване на данни на трети страни.</li>
+</ul>
+</div>
+
+<h2>Какви данни обработва приложението</h2>
+<ul>
+<li><b>Местоположение (GPS)</b> — по време на смяна или каране, за да се смятат километрите, престоят и сумата на курса. Пази се на уреда; диагностичните GPS точки се трият сами след 3 дни.</li>
+<li><b>Дневник на смените</b> — дати, часове, километри, курсове, оборот, разходи, бележки, въведени от потребителя или изчислени от GPS.</li>
+<li><b>Настройки</b> — тарифи, цена и разход на гориво, километраж.</li>
+<li><b>Данни от колата</b> (само на мултимедията в колата) — напрежение, разход, пробег; само се четат, нищо не се изпраща към колата.</li>
+</ul>
+
+<h2>Синхронизация с Google Drive (по избор)</h2>
+<p>Ако потребителят влезе с профила си в Google, приложението:</p>
+<ul>
+<li>иска правото <code>drive.file</code> — достъп <b>само до файловете, създадени от приложението</b>; останалите файлове в Drive не са достъпни;</li>
+<li>създава и обновява един файл <code>taxi-finance-sync.json</code> с дневника и настройките, за да са еднакви на колата и телефона;</li>
+<li>иска <code>openid</code> и <code>email</code> само за да покаже „Вписан като …“; имейлът остава на уреда.</li>
+</ul>
+<p>Ключовете за достъп се пазят само на уреда. Данните не минават през сървър на автора — уредът говори директно с Google.</p>
+<p>Използването и предаването на информация, получена от Google API, от Taxi Finance спазва
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+включително изискванията за ограничено използване (Limited Use).</p>
+
+<h2>Изтриване на данните</h2>
+<ul>
+<li>„Изход“ в настройките изтрива ключа за достъп от уреда.</li>
+<li>Достъпът се отнема и от <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+<li>Файлът <code>taxi-finance-sync.json</code> се трие от Google Drive като всеки друг файл.</li>
+<li>Деинсталирането на приложението изтрива всички данни от уреда.</li>
+</ul>
+
+<h2>Контакт</h2>
+<p>didopioneer79@gmail.com</p>
+
+<hr>
+<h1 id="en">Privacy Policy</h1>
+<p class="sub">Taxi Finance · effective 30 October 2026</p>
+
+<h2>Summary</h2>
+<ul>
+<li>All data is stored <b>on the user's own devices</b>. The developer runs no server and receives no data.</li>
+<li>Optionally, data is synchronised through the <b>user's own Google Drive</b>, only in the single file the app created.</li>
+<li>No ads, tracking, analytics, or sharing with third parties.</li>
+</ul>
+
+<h2>Data the app processes</h2>
+<ul>
+<li><b>Location (GPS)</b> during a shift or drive, to calculate distance, waiting time and fares. Kept on the device; diagnostic GPS points are deleted automatically after 3 days.</li>
+<li><b>Shift journal</b>: dates, times, distance, rides, revenue, expenses and notes entered by the user or calculated from GPS.</li>
+<li><b>Settings</b>: tariffs, fuel price and consumption, odometer.</li>
+<li><b>Vehicle data</b> (car head unit only): voltage, fuel consumption, range. Read-only; nothing is sent to the vehicle.</li>
+</ul>
+
+<h2>Google Drive synchronisation (optional)</h2>
+<ul>
+<li>Scope <code>https://www.googleapis.com/auth/drive.file</code>: access <b>only to files created by the app</b>. Other Drive files are not accessible.</li>
+<li>The app creates and updates one file, <code>taxi-finance-sync.json</code>, containing the journal and settings, so the car unit and the phone show the same data.</li>
+<li>Scopes <code>openid</code> and <code>email</code> are used only to display "Signed in as …"; the email address stays on the device.</li>
+<li>Access tokens are stored only on the device. Data does not pass through any developer server; the device talks to Google directly.</li>
+</ul>
+<p>Taxi Finance's use and transfer to any other app of information received from Google APIs will adhere to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+including the Limited Use requirements.</p>
+
+<h2>Deleting your data</h2>
+<ul>
+<li>"Sign out" in the app settings deletes the access token from the device.</li>
+<li>Access can be revoked at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+<li>The file <code>taxi-finance-sync.json</code> can be deleted from Google Drive like any other file.</li>
+<li>Uninstalling the app removes all data from the device.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>didopioneer79@gmail.com</p>
+</main>
+</body>
+</html>
